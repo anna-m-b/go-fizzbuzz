@@ -19,3 +19,5 @@ func fizzBuzz(n int) []string {
 	}
 	return result
 }
+
+// next: break up into smaller functions

@@ -5,10 +5,6 @@ import (
 	"testing"
 )
 
-// fizzbuzz outputs a list of numbers with multiples of 3s replaced with 'fizz' and multiples of 'buzz' replaced with 5, and multiples of 3 and 5 with 'fizzbuzz'
-// does it take any arguments?
-// v1 - no, just return 0  - 21
-
 func TestCorrectLength(t *testing.T) {
 	want := 21
 	act := fizzBuzz(21)
@@ -32,15 +28,6 @@ func TestCorrectType(t *testing.T) {
 		t.Errorf("wanted array of type %s, got %s", want, got)
 	}
 }
-
-// func TestNumbers(t *testing.T) {
-// 	want := []string{"1", "2", "3"}
-// 	got := fizzBuzz(3)
-// 	if reflect.DeepEqual(want, got) == false {
-// 		t.Errorf("wanted %v, got %v", want, got)
-// 		t.Errorf("%v", len(got))
-// 	}
-// }
 
 func TestFizz(t *testing.T) {
 	want := []string{"1", "2", "fizz"}
